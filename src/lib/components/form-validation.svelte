@@ -17,6 +17,6 @@
 
 <svelte:element this={tag} use:actions.validation {...attrs} {...$$restProps}>
 	{#if internalErrors}
-		{internalErrors}
+		{internalErrors.toString()}
 	{/if}
 </svelte:element>
